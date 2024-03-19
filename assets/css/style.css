@@ -1,0 +1,4584 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* FONTS STARTS */
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+    url('../fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../fonts/MyriadPro-Semibold.woff2') format('woff2'),
+    url('../fonts/MyriadPro-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agenda';
+  src: url('../fonts/Agenda-Semibold.woff2') format('woff2'),
+    url('../fonts/Agenda-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agenda';
+  src: url('../fonts/Agenda-MediumCondensed.woff2') format('woff2'),
+    url('../fonts/Agenda-MediumCondensed.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agenda';
+  src: url('../fonts/Agenda-Light.woff2') format('woff2'),
+    url('../fonts/Agenda-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Agenda';
+  src: url('../fonts/Agenda-MediumExtraCondensed.woff2') format('woff2'),
+    url('../fonts/Agenda-MediumExtraCondensed.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myanmar Text';
+  src: url('../fonts/MyanmarText.woff2') format('woff2'),
+    url('../fonts/MyanmarText.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* FONTS END */
+
+/* header css */
+header {
+  background: #242C32;
+}
+
+nav.navbar.navbar-expand-lg {
+  padding: 0;
+}
+
+.head-menu {
+  padding-left: 0px;
+}
+
+.header-logo {
+  background: #ffffff;
+  padding: 10px 85px 9px 85px;
+}
+
+.header-logo a {
+  display: inline-block;
+}
+
+ul#menu {
+  width: 100%;
+  max-width: 865px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+header .navbar-nav li a {
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 42px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+header .navbar-nav li a:hover {
+  color: #ffffff88;
+}
+
+header .navbar-nav li a:last-child {
+  margin-right: unset;
+}
+
+.login {
+  display: none;
+}
+
+.login a {
+  padding: 18px 64px;
+  background: #3A4247;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.contact {
+  display: none;
+}
+
+.contact a {
+  padding: 18px 64px;
+  background: #2bbdb4;
+  color: #ffffff;
+  font-family: "Brown";
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.contact-buttons ul {
+  margin-left: 0px;
+  display: flex;
+}
+
+.logedin a {
+  padding: 5px 64px;
+  background: #3A4247;
+  color: #ffffff;
+  font-family: 'Agenda';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 42px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.logedin a:hover {
+  background: #666E74;
+  color: #ffffff;
+}
+
+.contact-us a {
+  font-family: 'Agenda';
+  font-weight: 500;
+  font-style: normal;
+  padding: 5px 64px;
+  background: #2bbdb4;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 42px;
+  margin-left: 29px;
+  margin-right: 42px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+.contact-us a:hover {
+  color: #ffffff;
+  background: #666E74;
+}
+
+.contact-buttons a:hover {
+  color: #ffffff88;
+}
+
+/* banner css*/
+.banner {
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 252px 0px 310px;
+}
+
+.banner-inner {
+  text-align: center;
+  max-width: 1361px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.banner-inner h2 {
+  font-family: 'Agenda';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 43px;
+}
+
+.banner-inner h1 {
+  font-family: 'Myanmar Text';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 90px;
+  line-height: 112px;
+  color: #ffffff;
+  margin-bottom: 43px;
+
+}
+
+/* about us css*/
+
+/* about-top image */
+.about-top-image {
+  position: absolute;
+  max-width: 264px;
+  width: 100%;
+  z-index: 2;
+  left: 126px;
+  top: -176px;
+}
+
+.about {
+  background: #333d45;
+  padding: 127px 70px 139px;
+  position: relative;
+}
+
+.about-image {
+  margin-bottom: 147px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  margin-left: 125px;
+}
+
+.about-content {
+  padding: 0px 63px;
+}
+
+.about-content p {
+  font-family: 'Myriad Pro';
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.20px;
+  margin-bottom: 73px;
+}
+
+.about-content a {
+  padding: 7px 40px;
+  background: #666E74;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 42px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.about-content a:hover {
+  background: #2bbdb4;
+  color: #ffffff;
+}
+
+.about-bottom-images {
+  text-align: center;
+  display: flex;
+}
+
+.about-bottom-image {
+  width: 20%;
+}
+
+.about-images {
+  text-align: center;
+  opacity: 30%;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+
+.about-images:hover {
+  opacity: 100%;
+  transform: scale(1.08);
+}
+
+.about-image img {
+  width: 265px;
+}
+
+.about-images a {
+  display: inline-block;
+}
+
+.about-images img {
+  height: 100px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 44px;
+}
+
+.last {
+  margin-right: 0px;
+}
+
+.about-bottom-images p {
+  font-family: 'Agenda';
+  font-weight: 300;
+  font-style: normal;
+  color: #f1f5f8;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+/* conter css */
+.cunter {
+
+  padding: 125px 70px 0px;
+}
+
+.counter-content {
+  text-align: center;
+}
+
+.counter-content h2 {
+  font-family: 'Myanmar Text';
+  font-weight: normal;
+  font-style: normal;
+  color: #242c32;
+  font-size: 186px;
+  line-height: 154px;
+}
+
+.counter-content p {
+  font-family: 'Agenda';
+  font-weight: 300;
+  font-style: normal;
+  color: #1f2122;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 1px;
+  max-width: 197px;
+  width: 100%;
+  margin: auto;
+}
+
+/* memebership css */
+.memebership {
+  background-image: url(../img/hixa-3.png);
+  background-repeat: no-repeat;
+  background-size: 485px 650px;
+  background-position: right 0em bottom 10px;
+  padding: 270px 70px 0px;
+}
+
+.memebership-content {
+  padding: 0px 0px 0PX 110px;
+}
+
+.memebership-content p {
+  margin-bottom: 77px;
+  font-family: 'Myriad Pro';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.20px;
+}
+
+.memebership-content a {
+  font-family: 'Agenda';
+  font-weight: 300;
+  font-style: normal;
+  padding: 6px 50px 6px 50px;
+  background: #2bbdb4;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 42px;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.memebership-content a:hover {
+  background: #666E74;
+}
+
+.memebership-image {
+  margin-right: 0px;
+  margin: 115px 0px 0px 105px;
+}
+
+.memebership-image img {
+  width: 291px;
+}
+
+/* members css */
+.memebers {
+  padding: 0px 192px 0px;
+}
+
+.memebers-content {
+  text-align: center;
+  padding: 131px 0px 110px;
+}
+
+.memebers-content h2 {
+  font-family: 'Myanmar Text';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 66px;
+  line-height: 101px;
+}
+
+.members-map {
+  text-align: center;
+}
+
+.mymap {
+  filter: grayscale(100%) invert(15%);
+}
+
+/* quality-seal css */
+
+.quality-seal {
+  padding: 136px 0px 0px;
+}
+
+.quality-seal-image {
+  text-align: start;
+}
+
+.quality-seal-image img {
+  width: 272px;
+  margin-top: 23px;
+}
+
+.quality-seal-head h2 {
+  font-family: 'Myanmar Text';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 66px;
+  line-height: 101px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.quality-seal-content {
+  padding: 0px 25px;
+}
+
+.quality-seal-content p {
+  font-family: 'Agenda';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 34px;
+  color: #4a4f51;
+  margin-bottom: 80px;
+}
+
+.quality-seal-content a {
+  padding: 6px 68px 6px 68px;
+  background: #2bbdb4;
+  color: #ffffff;
+  font-family: 'Agenda';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 42px;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1px;
+  transition: 0.3s ease-in-out;
+}
+
+.quality-seal-content a:hover {
+  background: #666E74;
+}
+
+/* events css */
+.envets {
+  background-image: url(../img/event.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding: 130px 180px 135px;
+  position: relative;
+}
+
+.envets-head h2 {
+  font-family: 'Myanmar Text';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 101px;
+  color: #2bbdb4;
+  margin-bottom: 80px;
+}
+
+.envets-meeting h2 {
+  font-family: 'Myanmar Text';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+
+.envets-meeting ul {
+  margin-bottom: 66px;
+  min-height: 111px;
+}
+
+.envets-meeting ul li {
+  max-width: 373px;
+  width: 100%;
+  margin-bottom: 22px;
+}
+
+.envets-meeting ul li a {
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  display: inline-block;
+  color: #4a4f51;
+  letter-spacing: 0.20px;
+}
+
+.envets-meeting ul li .fa {
+  color: #2bbdb4;
+  margin-right: 19px;
+}
+
+.envets .register {
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 42px;
+  letter-spacing: 1px;
+  background: #242c32;
+  color: #ffffff;
+  padding: 6px 52px;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+.envets .register:hover {
+  background: #2bbdb4;
+}
+
+.spring-event::after {
+  content: " ";
+  width: 2px;
+  height: 326px;
+  background: #C8C8C8;
+  position: absolute;
+  left: 38%;
+  top: 40%;
+}
+
+/* footer css */
+footer {
+  padding: 0px 142px 52px 87px;
+  background: #242c32;
+}
+
+.footer-image {
+  padding: 51px 20px 0px;
+}
+
+.footer-image img {
+  width: 280px;
+}
+
+.footer-contact {
+  padding-top: 51px;
+}
+
+.footer-border::before {
+  content: " ";
+  width: 4px;
+  height: 393px;
+  position: absolute;
+  background: #ffffff17;
+  left: 24%;
+}
+
+.footer-contact ul {
+  max-width: 212px;
+  width: 100%;
+  margin-top: 28px;
+}
+
+.footer-contact ul li {
+  margin-bottom: 20px;
+}
+
+.footer-contact ul li a {
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.footer-menu {
+  padding-top: 51px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.list li a {
+  font-family: 'Agenda';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 42px;
+  letter-spacing: 1px;
+}
+
+.footer-social {
+  margin: 52px 0px 49px;
+}
+
+.footer-icons {
+  color: #2bbdb4;
+}
+
+
+.footer-social ul {
+  display: flex;
+  justify-content: end;
+
+}
+
+.footer-social ul li a {
+  color: #2bbdb4;
+  margin-left: 22px;
+  font-size: 26px;
+}
+
+.copy-write p {
+  font-family: 'Myriad Pro';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+  color: #fff6;
+  text-align: end;
+}
+
+/* All media screen  */
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+@media only screen and (max-width: 1800px) {
+  .header-logo {
+    padding: 10px 85px 9px 85px;
+  }
+
+  .about-top-image {
+    max-width: 264px;
+    left: 107px;
+    top: -177px;
+  }
+
+  .memebership {
+    background-size: 446px 605px;
+    background-position: right 0em bottom 10px;
+
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1680px and up) */
+@media only screen and (max-width: 1680px) {
+  .header-logo {
+    padding: 6px 36px 6px 36px;
+  }
+
+  .contact-us a {
+    margin-right: 22px;
+  }
+
+  .logedin a {
+    padding: 5px 62px;
+  }
+
+  .contact-us a {
+    padding: 5px 62px;
+  }
+
+  .banner-inner {
+    max-width: 1238px;
+  }
+
+  .banner-inner h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .banner-inner h1 {
+    font-size: 83px;
+    line-height: 105px;
+  }
+
+  .about-top-image {
+    max-width: 255px;
+    top: -169px;
+    left: 88px;
+  }
+
+  .about-image img {
+    width: 255px;
+  }
+
+  .counter-content h2 {
+    font-size: 179px;
+    line-height: 180px;
+    margin-bottom: 34px;
+  }
+
+  .memebership {
+    background-size: 415px 570px;
+    background-position: right 0em bottom 10px;
+  }
+
+  .memebership-image img {
+    width: 265px;
+  }
+
+
+  .memebers {
+    padding: 0px 172px 0px;
+  }
+
+  .memebers-content h2 {
+    font-size: 64px;
+    line-height: 94px;
+  }
+
+  .mymap {
+    height: 820px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 64px;
+    line-height: 94px;
+  }
+
+  .envets-head h2 {
+    font-size: 64px;
+    line-height: 94px;
+  }
+
+  .footer-contact ul li {
+    margin-bottom: 15px;
+  }
+
+  .footer-contact ul li a {
+    font-size: 19px;
+    line-height: 37px;
+  }
+
+  .footer-social {
+    margin: 44px 0px 40px;
+  }
+
+  .copy-write p {
+    font-size: 17px;
+    line-height: 32px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+
+@media only screen and (max-width: 1600px) {
+  .header-logo {
+    max-width: 329px;
+  }
+
+  ul#menu {
+
+    justify-content: space-evenly;
+    max-width: 848px;
+  }
+
+  .contact-us a {
+    margin-right: 18px;
+  }
+
+  .logedin a {
+    padding: 5px 56px;
+  }
+
+  .contact-us a {
+    padding: 5px 56px;
+  }
+
+  .contact-us a {
+    margin-left: 20px;
+  }
+
+  .banner-inner h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .banner-inner h1 {
+    font-size: 82px;
+    line-height: 96px;
+  }
+
+  .banner {
+    padding: 245px 0px 295px;
+  }
+
+  .about-top-image {
+    max-width: 249px;
+    top: -159px;
+    left: 86px;
+  }
+
+  .about-image img {
+    width: 250px;
+  }
+
+  .about-content a {
+    padding: 7px 36px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+
+
+  .counter-content h2 {
+    font-size: 165px;
+    line-height: 172px;
+    margin-bottom: 26px;
+  }
+
+  .memebership-content {
+    padding: 0px 25px 0PX 82px;
+  }
+
+  .memebership-image img {
+    width: 255px;
+  }
+
+  .memebership-content p {
+    margin-bottom: 60px;
+  }
+
+  .memebership-content a {
+    padding: 6px 45px 5px 45px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .memebership-image {
+    margin: 139px 0px 0px 89px;
+  }
+
+  .memebers-content {
+    text-align: center;
+    padding: 145px 0px 90px;
+  }
+
+  .memebers-content h2 {
+    font-size: 62px;
+    line-height: 80px;
+  }
+
+  .mymap {
+    height: 810px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 62px;
+    line-height: 80px;
+    margin-bottom: 80px;
+  }
+
+  .quality-seal-content {
+    padding: 0px 70px;
+  }
+
+
+  .quality-seal-image {
+    text-align: end;
+  }
+
+  .quality-seal-image img {
+    width: 258px;
+  }
+
+  .quality-seal-content p {
+    margin-bottom: 38px;
+  }
+
+  .envets-head h2 {
+    font-size: 62px;
+    line-height: 80px;
+    line-height: 75px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 31px;
+    line-height: 40px;
+    margin-bottom: 50px;
+  }
+
+  .envets-meeting ul li {
+    max-width: 340px;
+
+  }
+
+  .spring-event::after {
+    content: " ";
+    width: 2px;
+    height: 320px;
+    background: #C8C8C8;
+    position: absolute;
+    left: 40%;
+    top: 39%;
+  }
+
+  .envets .register {
+    padding: 6px 46px;
+  }
+
+  .footer-image img {
+    width: 240px;
+  }
+
+  .footer-border::before {
+    width: 3px;
+    height: 358px;
+    left: 25%;
+  }
+
+  .footer-contact ul li {
+    margin-bottom: 13px;
+  }
+
+  .footer-social {
+    margin: 38px 0px 34px;
+  }
+
+  .footer-social ul li a {
+    font-size: 23px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+
+@media only screen and (max-width: 1500px) {
+  ul#menu {
+    justify-content: space-evenly;
+    max-width: 830px;
+  }
+
+  .header-logo {
+    max-width: 300px;
+  }
+
+  header .navbar-nav li a {
+    font-size: 16px;
+  }
+
+  .logedin a {
+    padding: 5px 53px;
+  }
+
+  .contact-us a {
+    padding: 5px 46px;
+  }
+
+  .banner {
+    padding: 204px 0px 236px;
+  }
+
+  .banner-inner {
+    max-width: 1074px;
+  }
+
+  .banner-inner h2 {
+    font-size: 29px;
+    line-height: 37px;
+  }
+
+  .banner-inner h1 {
+    font-size: 72px;
+    line-height: 91px;
+  }
+
+  .about-top-image {
+    left: 76px;
+    top: -157px;
+  }
+
+  .about-content p {
+    font-size: 17px;
+    line-height: 28px;
+
+  }
+
+  .about-content a {
+    font-size: 15px;
+    line-height: 39px;
+  }
+
+
+  .about-bottom-images p {
+    font-size: 18px;
+    line-height: 26px;
+
+  }
+
+  .counter-content h2 {
+    font-size: 154px;
+    line-height: 166px;
+    margin-bottom: 21px;
+  }
+
+  .counter-content p {
+    max-width: 185px;
+    font-size: 19px;
+    line-height: 29px;
+  }
+
+  .memebers {
+    padding: 0px 155px 0px;
+  }
+
+  .memebership-content p {
+    margin-bottom: 66px;
+    font-size: 18px;
+    line-height: 32px;
+
+  }
+
+  .memebership-content {
+    padding: 0px 9px 0px 75px;
+  }
+
+
+  .memebership-content a {
+    font-size: 15px;
+    line-height: 39px;
+  }
+
+  .memebership-image {
+    margin: 125px 0px 0px 45px;
+  }
+
+  .memebership-image img {
+    width: 242px;
+  }
+
+  .memebers-content h2 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .members-map {
+    margin-left: 0px;
+
+  }
+
+  .quality-seal-head h2 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .quality-seal-content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .quality-seal-content a {
+    padding: 4px 60px 6px 60px;
+    font-size: 16px;
+    line-height: 39px;
+
+  }
+
+  .quality-seal-image img {
+    width: 210px;
+    margin-top: 10px;
+  }
+
+  .envets-head h2 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 30px;
+    line-height: 35px;
+
+  }
+
+  .envets .register {
+    font-size: 17px;
+    line-height: 41px;
+    padding: 5px 45px;
+
+  }
+
+  .envets-meeting ul {
+    margin-bottom: 46px;
+
+  }
+
+  .envets-meeting ul li {
+    max-width: 316px;
+  }
+
+  .envets-meeting ul li a {
+    font-size: 18px;
+  }
+
+  .spring-event::after {
+    height: 294px;
+    left: 41%;
+    top: 39.8%;
+  }
+
+  .footer-border::before {
+    width: 3px;
+    height: 299px;
+    left: 25%;
+  }
+
+  .footer-image img {
+    width: 215px;
+  }
+
+  footer {
+    padding: 0px 110px 50px 90px;
+
+  }
+
+  .footer-image {
+    padding: 48px 20px 0px;
+  }
+
+  .footer-contact {
+    padding-top: 39px;
+
+  }
+
+  .footer-contact ul li a {
+    font-size: 18px;
+
+  }
+
+  .footer-contact ul li {
+    margin-bottom: 11px;
+  }
+
+  .footer-menu {
+    padding-top: 36px;
+  }
+
+  .list li a {
+
+    font-size: 17px;
+    line-height: 32px;
+
+  }
+
+  .copy-write p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .footer-social {
+    margin: 32px 0px 27px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+
+@media only screen and (max-width: 1440px) {
+  .header-logo {
+    max-width: 277px;
+  }
+
+  ul#menu {
+    max-width: 787px;
+  }
+
+  .logedin a {
+    font-size: 16px;
+    line-height: 39px;
+    padding: 5px 48px;
+  }
+
+  .contact-us a {
+    font-size: 16px;
+    line-height: 39px;
+    padding: 5px 40px;
+  }
+
+  .banner {
+    padding: 190px 0px 218px;
+  }
+
+  .banner-inner {
+    max-width: 1017px;
+  }
+
+  .banner-inner h2 {
+    font-size: 27px;
+    line-height: 33px;
+  }
+
+  .banner-inner h1 {
+    font-size: 67px;
+    line-height: 88px;
+  }
+
+  .about-top-image {
+    left: 82px;
+    max-width: 232px;
+    top: -146px;
+  }
+
+  .about-image img {
+    width: 233px;
+  }
+
+  .about-content a {
+    font-size: 14px;
+    line-height: 38px;
+  }
+
+  .about-bottom-images p {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .counter-content h2 {
+    font-size: 139px;
+    line-height: 155px;
+    margin-bottom: 15px;
+  }
+
+  .counter-content p {
+    max-width: 177px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .memebership {
+    padding: 260px 70px 0px;
+    background-size: 391px 521px;
+    background-position: right 0em bottom 10px;
+
+  }
+
+  .memebership-content {
+    padding: 0px 9px 0px 79px;
+  }
+
+  .memebership-content p {
+    margin-bottom: 46px;
+    font-size: 17px;
+    line-height: 31px;
+  }
+
+  .memebership-image {
+    margin: 98px 0px 0px 52px;
+  }
+
+  .memebership-image img {
+    width: 228px;
+  }
+
+  .memebership-content a {
+    font-size: 14px;
+    line-height: 38px;
+  }
+
+  .memebers {
+    padding: 0px 149px 0px;
+  }
+
+  .memebers-content h2 {
+    font-size: 56px;
+    line-height: 63px;
+  }
+
+  .mymap {
+    height: 740px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 56px;
+    line-height: 63px;
+  }
+
+  .quality-seal-content {
+    padding: 0px 150px 0px 30px;
+  }
+
+  .quality-seal-content a {
+    font-size: 14px;
+    line-height: 38px;
+  }
+
+  .envets {
+    padding: 130px 152px 135px;
+
+  }
+
+  .envets-head h2 {
+    font-size: 56px;
+    line-height: 63px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 29px;
+    line-height: 34px;
+  }
+
+  .envets-meeting ul li a {
+    font-size: 17px;
+  }
+
+  .spring-event::after {
+    top: 38.8%;
+  }
+
+  .envets .register {
+    font-size: 16px;
+    line-height: 40px;
+    padding: 5px 39px;
+  }
+
+  footer {
+    padding: 0px 100px 52px 90px;
+  }
+
+  .footer-image {
+    padding: 40px 3px 0px;
+  }
+
+  .footer-contact {
+    padding-top: 29px;
+  }
+
+  .footer-contact ul li a {
+    font-size: 16px;
+    line-height: 34px;
+  }
+
+  .list li a {
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .footer-menu {
+    padding-top: 32px;
+  }
+
+  .footer-social {
+    margin: 27px 0px 27px;
+  }
+
+  .footer-social ul li a {
+    font-size: 21px;
+  }
+
+  .copy-write p {
+    font-size: 15px;
+    line-height: 29px;
+  }
+
+  .footer-border::before {
+    width: 3px;
+    height: 283px;
+    left: 25%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1366px and up) */
+
+@media only screen and (max-width: 1366px) {
+  .header-logo {
+    max-width: 246px;
+    padding: 5px 25px 5px 25px;
+
+  }
+
+
+  ul#menu {
+    max-width: 766px;
+  }
+
+  header .navbar-nav li a {
+    font-size: 15px;
+  }
+
+  .logedin a {
+    font-size: 14px;
+    line-height: 37px;
+    padding: 4px 40px;
+  }
+
+  .contact-us a {
+    font-size: 14px;
+    line-height: 37px;
+    padding: 4px 37px;
+  }
+
+  .banner {
+    padding: 146px 0px 146px;
+  }
+
+  .banner-inner h2 {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .banner-inner {
+    max-width: 751px;
+  }
+
+  .banner-inner h1 {
+    font-size: 52px;
+    line-height: 76px;
+  }
+
+  .about {
+    background: #333d45;
+    padding: 108px 70px 110px;
+    position: relative;
+  }
+
+  .about-top-image {
+    left: 87px;
+    top: -141px;
+    max-width: 212px;
+  }
+
+  .about-image img {
+    width: 214px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  .about-content a {
+    font-size: 13px;
+    line-height: 37px;
+  }
+
+  .about-images img {
+    width: 95%;
+    margin-bottom: 39px;
+  }
+
+  .about-bottom-images p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .counter-content h2 {
+    font-size: 131px;
+    line-height: 149px;
+    margin-bottom: 12px;
+  }
+
+  .counter-content p {
+    max-width: 157px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .memebership {
+    padding: 230px 70px 0px;
+    background-size: 365px 479px;
+    background-position: right 0em bottom 10px;
+  }
+
+  .memebership-content {
+    padding: 0px 9px 0px 69px;
+  }
+
+  .memebership-content p {
+    margin-bottom: 44px;
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  .memebership-content a {
+    font-size: 13px;
+    line-height: 37px;
+  }
+
+  .memebership-image {
+    margin: 92px 0px 0px 59px;
+  }
+
+  .memebership-image img {
+    width: 206px;
+  }
+
+  .memebers-content {
+    padding: 133px 0px 71px;
+  }
+
+  .memebers-content h2 {
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  .mymap {
+    height: 700px;
+  }
+
+  .quality-seal {
+    padding: 122px 0px 0px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 50px;
+    line-height: 56px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 59px;
+  }
+
+  .quality-seal-content p {
+    font-size: 15px;
+    line-height: 27px;
+  }
+
+  .quality-seal-content a {
+    font-size: 13px;
+    line-height: 37px;
+  }
+
+  .quality-seal-image img {
+    width: 201px;
+    margin-top: 11px;
+  }
+
+  .envets-head h2 {
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 54px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 28px;
+
+  }
+
+  .envets-meeting ul li a {
+    font-size: 16px;
+  }
+
+  .envets-meeting ul li {
+    max-width: 283px;
+    margin-bottom: 19px;
+  }
+
+  .envets .register {
+    font-size: 14px;
+    line-height: 38px;
+    padding: 5px 38px;
+  }
+
+  .spring-event::after {
+    top: 36.8%;
+    height: 287px;
+  }
+
+  .footer-image {
+    padding: 32px 0px 0px;
+  }
+
+  .footer-contact {
+    padding-top: 24px;
+  }
+
+  .footer-contact ul li a {
+    font-size: 15px;
+    line-height: 32px;
+  }
+
+  .footer-contact ul li {
+    margin-bottom: 10px;
+  }
+
+  .list {
+    margin-top: 24px;
+  }
+
+  .list li a {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .footer-social ul li a {
+    font-size: 20px;
+    margin-left: 19px;
+  }
+
+  .copy-write p {
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+
+@media only screen and (max-width: 1280px) {
+  .header-logo {
+    max-width: 231px;
+  }
+
+  .logedin a {
+    font-size: 13px;
+    line-height: 36px;
+    padding: 4px 40px;
+  }
+
+  .contact-us a {
+    font-size: 13px;
+    line-height: 36px;
+    padding: 3px 37px;
+    margin-left: 19px;
+  }
+
+  .banner-inner h2 {
+    font-size: 23px;
+    line-height: 16px;
+  }
+
+  .banner-inner h1 {
+    font-size: 48px;
+    line-height: 71px;
+  }
+
+  .about-image img {
+    width: 206px;
+  }
+
+  .about-top-image {
+    left: 84px;
+    top: -132px;
+    max-width: 206px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 31px;
+  }
+
+  .about-content a {
+    font-size: 12px;
+    line-height: 32px;
+  }
+
+  .about-images img {
+    width: 90%;
+    margin-bottom: 36px;
+  }
+
+  .about-bottom-images p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .cunter {
+    padding: 96px 70px 0px;
+  }
+
+  .counter-content h2 {
+    font-size: 121px;
+    line-height: 130px;
+    margin-bottom: 9px;
+  }
+
+  .counter-content p {
+    max-width: 154px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .memebership {
+    padding: 230px 70px 0px;
+    background-size: 343px 444px;
+    background-position: right 0em bottom 10px;
+  }
+
+  .memebership-content {
+    padding: 0px 9px 0px 65px;
+  }
+
+  .memebership-content p {
+    margin-bottom: 34px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .memebership-content a {
+    font-size: 12px;
+    line-height: 32px;
+  }
+
+  .memebership-image {
+    margin: 50px 0px 0px 46px;
+  }
+
+  .memebership-image img {
+    width: 196px;
+  }
+
+  .memebers-content h2 {
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 46px;
+    line-height: 52px;
+  }
+
+  .quality-seal-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+
+  }
+
+  .quality-seal-content a {
+    font-size: 15px;
+    line-height: 32px;
+    padding: 4px 44px 4px 44px;
+  }
+
+  .quality-seal-image img {
+    width: 169px;
+    margin-top: 6px;
+  }
+
+  .envets-head h2 {
+    font-size: 46px;
+    line-height: 52px;
+    margin-bottom: 43px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 25px;
+    line-height: 31px;
+    margin-bottom: 45px;
+  }
+
+  .envets-meeting ul li a {
+    font-size: 15px;
+  }
+
+  .envets-meeting ul li {
+    max-width: 279px;
+    margin-bottom: 17px;
+  }
+
+  .envets-meeting ul li .fa {
+    margin-right: 12px;
+  }
+
+  .envets .register {
+    font-size: 13px;
+    line-height: 34px;
+    padding: 5px 34px;
+  }
+
+  .spring-event::after {
+    top: 35.8%;
+    height: 278px;
+  }
+
+  footer {
+    padding: 0px 70px 49px 83px;
+  }
+
+  .footer-image {
+    padding: 23px 0px 0px;
+  }
+
+  .footer-image img {
+    width: 203px;
+  }
+
+  .footer-contact {
+    padding-top: 15px;
+  }
+
+  .footer-contact ul li a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .footer-menu {
+    padding-top: 22px;
+  }
+
+  .list li a {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+
+  .footer-social ul li a {
+    font-size: 18px;
+    margin-left: 17px;
+  }
+
+  .copy-write p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .footer-border::before {
+    width: 2px;
+    height: 247px;
+    left: 26%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (max-width: 1200px) {
+  .header-logo {
+    max-width: 211px;
+    padding: 4px 19px 4px 17px;
+  }
+
+  ul#menu {
+    max-width: 668px;
+  }
+
+  header .navbar-nav li a {
+    font-size: 15px;
+  }
+
+  .logedin a {
+    font-size: 14px;
+    line-height: 29px;
+    padding: 4px 34px;
+  }
+
+  .contact-us a {
+    font-size: 14px;
+    line-height: 31px;
+    padding: 4px 30px;
+  }
+
+  .banner-inner h2 {
+    font-size: 22px;
+    line-height: 16px;
+    margin-bottom: 37px;
+  }
+
+  .banner-inner h1 {
+    font-size: 45px;
+    line-height: 68px;
+  }
+
+  .about-content a {
+    font-size: 12px;
+    line-height: 30px;
+    padding: 7px 31px;
+  }
+
+  .about-images img {
+    width: 85%;
+    margin-bottom: 34px;
+  }
+
+  .about-bottom-images p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .counter-content h2 {
+    font-size: 118px;
+    line-height: 128px;
+    margin-bottom: 5px;
+  }
+
+  .counter-content p {
+    margin-bottom: 34px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .memebership {
+    background-size: 325px 424px;
+  }
+
+  .memebership-content {
+    padding: 0px 9px 0px 52px;
+  }
+
+  .memebership-content a {
+    font-size: 14px;
+    line-height: 31px;
+    padding: 6px 39px 6px 39px
+  }
+
+  .memebership-image {
+    margin: 47px 0px 0px 39px;
+  }
+
+  .memebership-image img {
+    width: 187px;
+  }
+
+  .memebers {
+    padding: 0px 145px 0px;
+  }
+
+  .memebers-content h2 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+
+  .mymap {
+    height: 620px;
+  }
+
+  .quality-seal {
+    padding: 105px 0px 0px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 44px;
+    line-height: 50px;
+    margin-bottom: 44px;
+  }
+
+  .quality-seal-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 21px;
+  }
+
+  .quality-seal-content a {
+    font-size: 15px;
+    line-height: 31px;
+    padding: 3px 40px 3px 40px;
+  }
+
+  .envets-head h2 {
+    font-size: 44px;
+    line-height: 50px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 35px;
+  }
+
+  .spring-event::after {
+    top: 36.8%;
+    height: 258px;
+  }
+
+  .footer-image img {
+    width: 194px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1199px and up) */
+
+@media only screen and (max-width: 1199px) {
+  /*  */
+}
+
+/* Large devices (laptops/desktops, 1114px and up) */
+
+@media only screen and (max-width: 1114px) {
+  .header-logo {
+    max-width: 195px;
+    padding: 3px 10px 3px 10px;
+  }
+
+  ul#menu {
+    max-width: 649px;
+  }
+
+  header .navbar-nav li a {
+    font-size: 14px;
+  }
+
+  .contact-us a {
+    margin-right: 9px;
+  }
+
+  .logedin a {
+    font-size: 13px;
+    line-height: 32px;
+    padding: 2px 32px;
+  }
+
+  .contact-us a {
+    font-size: 13px;
+    line-height: 29px;
+    padding: 3px 27px;
+    margin-left: 13px;
+  }
+
+  .banner {
+    padding: 134px 0px 121px;
+  }
+
+  .banner-inner h2 {
+    font-size: 20px;
+    line-height: 16px;
+    margin-bottom: 28px;
+  }
+
+  .banner-inner {
+    max-width: 708px;
+  }
+
+  .banner-inner h1 {
+    font-size: 40px;
+    line-height: 65px;
+  }
+
+  .about-top-image {
+    left: 70px;
+    top: -118px;
+    max-width: 186px;
+  }
+
+  .about-image img {
+    width: 186px;
+    margin-left: 109px;
+  }
+
+  .about-content {
+    padding: 0px 42px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+
+  .about-content a {
+    font-size: 12px;
+    line-height: 29px;
+    padding: 7px 29px;
+  }
+
+  .about-images img {
+    width: 83%;
+    margin-bottom: 33px;
+  }
+
+  .cunter {
+    padding: 81px 70px 0px;
+  }
+
+  .counter-content h2 {
+    font-size: 113px;
+    line-height: 123px;
+
+  }
+
+  .counter-content p {
+    max-width: 136px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .memebership {
+    background-size: 306px 402px;
+    background-size: 270px 371px;
+    background-position: right 0em bottom 32px;
+  }
+
+  .memebership-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 29px;
+  }
+
+  .memebership-content a {
+    font-size: 14px;
+    line-height: 29px;
+    padding: 6px 36px 5px 36px;
+  }
+
+  .memebership-content {
+    padding: 0px 0px 0px 51px;
+  }
+
+  .memebership-image {
+    margin: 72px 0px 0px 30px;
+  }
+
+  .memebership-image img {
+    width: 175px;
+  }
+
+  .memebers {
+    padding: 0px 129px 0px;
+  }
+
+  .memebers-content {
+    padding: 115px 0px 63px;
+  }
+
+  .memebers-content h2 {
+    font-size: 41px;
+    line-height: 47px;
+  }
+
+  .mymap {
+    height: 580px;
+  }
+
+  .quality-seal {
+    padding: 77px 0px 0px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 41px;
+    line-height: 47px;
+    margin-bottom: 37px;
+  }
+
+  .quality-seal-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 18px;
+
+  }
+
+  .quality-seal-content {
+    padding: 0px 97px 0px 27px;
+  }
+
+  .quality-seal-image img {
+    width: 166px;
+    margin-top: 5px;
+  }
+
+  .quality-seal-content a {
+    font-size: 15px;
+    line-height: 29px;
+    padding: 5px 39px 5px 39px;
+  }
+
+  .envets {
+    padding: 102px 122px 94px;
+  }
+
+  .envets-head h2 {
+    font-size: 41px;
+    line-height: 47px;
+    margin-bottom: 38px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 29px;
+  }
+
+  .envets-meeting ul li {
+    max-width: 255px;
+    margin-bottom: 15px;
+  }
+
+  .envets-meeting ul li a {
+    font-size: 14px;
+  }
+
+  .envets-meeting ul li .fa {
+    margin-right: 9px;
+  }
+
+  .spring-event::after {
+    top: 35.8%;
+    height: 251px;
+  }
+
+  .envets .register {
+    font-size: 12px;
+    line-height: 31px;
+    padding: 5px 31px;
+  }
+
+  .footer-image img {
+    width: 168px;
+  }
+
+  .footer-border::before {
+    width: 2px;
+    height: 226px;
+    left: 27%;
+  }
+
+  .footer-contact ul li a {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .footer-social {
+    margin: 22px 0px 22px;
+  }
+
+  .list li a {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .footer-social ul li a {
+    font-size: 16px;
+    margin-left: 16px;
+  }
+
+  .copy-write p {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
+
+/* Large devices (laptops/desktops, 1100px and up) */
+
+@media only screen and (max-width: 1100px) {
+  /*  */
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+
+@media only screen and (max-width: 1024px) {
+  header .navbar-nav li a {
+    font-size: 14px;
+  }
+
+  .header-logo {
+    max-width: 158px;
+    padding: 3px 9px 3px 9px;
+  }
+
+  .logedin a {
+    font-size: 12px;
+    line-height: 27px;
+    padding: 3px 29px;
+  }
+
+  .contact-us a {
+    font-size: 12px;
+    line-height: 27px;
+    padding: 3px 26px;
+    margin-left: 12px;
+  }
+
+  .banner {
+    padding: 126px 0px 112px;
+  }
+
+  .banner-inner {
+    max-width: 588px;
+  }
+
+  .banner-inner h2 {
+    font-size: 17px;
+    line-height: 16px;
+    margin-bottom: 24px;
+  }
+
+  .banner-inner h1 {
+    font-size: 34px;
+    line-height: 55px;
+  }
+
+  .about-top-image {
+    left: 51px;
+    top: -118px;
+    max-width: 176px;
+  }
+
+  .about-image img {
+    width: 176px;
+    margin-left: 91px;
+  }
+
+  .about {
+    padding: 91px 50px 75px;
+  }
+
+  .about-content {
+    padding: 0px 17px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 26px;
+  }
+
+  .about-content a {
+    font-size: 12px;
+    line-height: 27px;
+    padding: 7px 28px;
+  }
+
+  .about-images img {
+    width: 77%;
+    margin-bottom: 27px;
+  }
+
+  .cunter {
+    padding: 77px 50px 0px;
+  }
+
+  .counter-content h2 {
+    font-size: 104px;
+    line-height: 112px;
+  }
+
+  .counter-content p {
+    max-width: 126px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .memebership {
+    padding: 180px 50px 0px;
+  }
+
+  .memebership-content p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 26px;
+  }
+
+  .memebership-content a {
+    font-size: 14px;
+    line-height: 27px;
+    padding: 6px 34px 5px 34px;
+  }
+
+  .memebership-content {
+    padding: 0px 0px 0px 48px;
+  }
+
+  .memebership-image img {
+    width: 165px;
+  }
+
+  .memebership-right-image {
+    max-width: 258px;
+    top: 71px;
+  }
+
+  .memebers {
+    padding: 0px 104px 0px;
+  }
+
+  .memebers-content {
+    padding: 97px 0px 39px;
+  }
+
+  .memebers-content h2 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .mymap {
+    height: 530px;
+  }
+
+  .quality-seal {
+    padding: 70px 0px 0px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .quality-seal-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .quality-seal-content {
+    padding: 0px 96px 0px 26px;
+  }
+
+  .quality-seal-content a {
+    font-size: 15px;
+    line-height: 27px;
+    padding: 5px 37px 5px 37px;
+
+  }
+
+  .quality-seal-image img {
+    width: 131px;
+    margin-top: 16px;
+  }
+
+  .envets {
+    padding: 100px 96px 94px;
+  }
+
+  .envets-head h2 {
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 25px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+
+  .envets-meeting ul li a {
+    font-size: 13px;
+  }
+
+  .envets-meeting ul li {
+    max-width: 239px;
+    margin-bottom: 12px;
+  }
+
+  .spring-event::after {
+    top: 33.8%;
+    height: 245px;
+    width: 1px;
+  }
+
+  .envets .register {
+    font-size: 12px;
+    line-height: 27px;
+    padding: 5px 25px;
+  }
+
+  footer {
+    padding: 0px 48px 49px 55px;
+  }
+
+  .footer-image img {
+    width: 179px;
+  }
+
+  .footer-contact ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-contact ul li a {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .list li a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .copy-write p {
+    font-size: 12px;
+    line-height: 19px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 992px) {
+  ul#menu {
+    max-width: 629px;
+  }
+
+  .header-logo {
+    max-width: 146px;
+    padding: 3px 9px 3px 9px;
+  }
+
+  header .navbar-nav li a {
+    font-size: 13px;
+  }
+
+  .logedin a {
+    font-size: 12px;
+    line-height: 26px;
+    padding: 3px 26px;
+  }
+
+  .contact-us a {
+    font-size: 12px;
+    line-height: 26px;
+    padding: 3px 24px;
+  }
+
+  .banner {
+    padding: 112px 0px 87px;
+  }
+
+  .banner-inner h2 {
+    font-size: 15px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+
+  .banner-inner h1 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .banner-inner {
+    max-width: 549px;
+  }
+
+  .about {
+    padding: 77px 36px 65px;
+  }
+
+  .about-top-image {
+    left: 31px;
+    top: -108px;
+    max-width: 158px;
+  }
+
+  .about-image img {
+    width: 152px;
+    margin-left: 45px;
+  }
+
+  .about-content {
+    padding: 0px 4px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+
+  .about-content a {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 10px 30px;
+  }
+
+  .about-images img {
+    width: 70%;
+    margin-bottom: 25px;
+  }
+
+  .cunter {
+    padding: 64px 36px 0px;
+  }
+
+  .counter-content h2 {
+    font-size: 91px;
+    line-height: 105px;
+  }
+
+  .counter-content p {
+    max-width: 99px;
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  .memebership {
+    padding: 180px 45px 0px;
+    background-size: 269px 363px;
+    background-position: right 0em bottom 35px;
+  }
+
+  .memebership-content {
+    padding: 0px 0px 0px 41px;
+  }
+
+  .memebership-content p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
+
+  .memebership-content a {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 8px 29px;
+  }
+
+
+  .memebership-image img {
+    width: 159px;
+  }
+
+  .quality-seal-content {
+    padding: 0px 93px 0px 23px;
+  }
+
+  .memebers {
+    padding: 0px 92px 0px;
+  }
+
+  .memebers-content h2 {
+    font-size: 31px;
+    line-height: 41px;
+  }
+
+  .mymap {
+    height: 500px;
+  }
+
+  .quality-seal {
+    padding: 67px 0px 0px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 31px;
+    line-height: 41px;
+    margin-bottom: 24px;
+  }
+
+  .quality-seal-content p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 17px;
+  }
+
+  .quality-seal-content a {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 7px 32px;
+  }
+
+  .quality-seal-image img {
+    width: 128px;
+    margin-top: 10px;
+  }
+
+  .envets {
+    padding: 100px 88px 94px;
+  }
+
+  .envets-head h2 {
+    font-size: 31px;
+    line-height: 41px;
+    margin-bottom: 22px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 17px;
+  }
+
+  .envets-meeting ul {
+    margin-bottom: 17px;
+  }
+
+  .envets-meeting ul li {
+    max-width: 199px;
+    margin-bottom: 11px;
+  }
+
+  .envets-meeting ul li .fa {
+    margin-right: 7px;
+  }
+
+  .envets-meeting ul li a {
+    font-size: 14px;
+  }
+
+  .spring-event::after {
+    top: 35.8%;
+    height: 202px;
+    width: 1px;
+    left: 40%;
+  }
+
+  .envets .register {
+    font-size: 12px;
+    line-height: 24px;
+    padding: 6px 23px;
+  }
+
+  .footer-image img {
+    width: 170px;
+  }
+
+  .footer-contact ul li {
+    margin-bottom: 6px;
+  }
+
+  .footer-contact ul li a {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .list {
+    flex-wrap: wrap;
+  }
+
+  .list li a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .footer-social {
+    margin: 13px 0px 13px;
+  }
+
+  .footer-social ul li a {
+    font-size: 14px;
+    margin-left: 13px;
+  }
+
+  .copy-write p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .footer-border::before {
+    width: 2px;
+    height: 204px;
+    left: 27%;
+  }
+}
+
+/* Large devices (laptops/desktops, 991px and up) */
+
+@media only screen and (max-width: 991px) {
+  header .navbar-nav li a {
+    font-size: 14px;
+    line-height: 38px;
+
+  }
+
+  .navbar {
+    position: absolute;
+    width: 100%;
+    z-index: 6;
+    background: #242C32;
+  }
+
+  .contact-buttons {
+    display: none;
+  }
+
+  .login {
+    display: block;
+
+  }
+
+  .login a {
+    padding: 0px 32px !important;
+    line-height: 36px !important;
+  }
+
+  .contact a {
+    padding: 0px 28px !important;
+    line-height: 36px !important;
+  }
+
+  .contact {
+    display: block;
+  }
+
+  .login a {
+    background: #3A4247;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 27px;
+    padding: 0px 36px;
+    font-weight: 400;
+    letter-spacing: 0.10px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+
+  .contact a {
+    background: #2bbdb4;
+    color: #ffffff;
+    font-family: "Brown";
+    font-size: 12px;
+    line-height: 27px;
+    padding: 0px 36px;
+    font-weight: 400;
+    letter-spacing: 0.10px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  .navbar-toggler {
+    background: #fcf7f7;
+    border-radius: 1px;
+  }
+
+  ul#menu {
+    max-width: 968px;
+    text-align: center;
+  }
+
+  .banner {
+    padding: 152px 0px 106px;
+  }
+
+  .banner-inner h2 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+
+  .banner-inner h1 {
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  .about {
+    padding: 71px 30px 65px;
+  }
+
+  .about-content {
+
+    margin-bottom: 95px;
+  }
+
+  .about-content a {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 8px 24px;
+  }
+
+  .about-top-image {
+    left: 52px;
+    top: -91px;
+    max-width: 135px;
+  }
+
+  .about-image img {
+    width: 140px;
+    margin-left: 45px;
+  }
+
+  .cunter {
+    padding: 61px 30px 0px;
+  }
+
+  .memebership {
+    padding: 180px 45px 0px;
+    background-size: 263px 343px;
+    background-position: right 0em bottom 41px;
+  }
+
+  .memebership-content a {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 7px 26px;
+  }
+
+  .memebership-image {
+    margin: 69px 0px 0px 28px;
+  }
+
+  .quality-seal-image {
+    text-align: center;
+    margin-bottom: 43px;
+  }
+
+  .quality-seal-content {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .quality-seal-content a {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 7px 33px;
+  }
+
+  .envets {
+    padding: 100px 80px 94px;
+  }
+
+  footer {
+    padding: 0px 57px 49px 48px;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 884px and up) */
+
+@media only screen and (max-width: 884px) {
+  .banner-inner h2 {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 14px;
+  }
+
+  .banner-inner {
+    max-width: 500px;
+  }
+
+  .banner-inner h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .about-content {
+    padding: 0px 0px;
+  }
+
+  .about-top-image {
+    left: 44px;
+    top: -90px;
+    max-width: 134px;
+  }
+
+  .about-image img {
+    width: 135px;
+    margin-left: 56px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 26px;
+  }
+
+  .about-content a {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 8px 21px;
+  }
+
+  .about-images img {
+    width: 68%;
+    margin-bottom: 24px;
+  }
+
+  .about-bottom-images p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .counter-content h2 {
+    font-size: 84px;
+    line-height: 94px;
+  }
+
+  .memebership {
+    padding: 180px 45px 0px;
+    background-size: 240px 315px;
+    background-position: right 0em bottom 100px;
+  }
+
+  .memebership-content {
+    padding: 0px 0px 0px 35px;
+  }
+
+  .memebership-content p {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 22px;
+  }
+
+  .memebership-content a {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 7px 26px;
+  }
+
+  .memebership-image {
+    margin: 70px 0px 0px 17px;
+  }
+
+  .memebership-image img {
+    width: 148px;
+  }
+
+  .memebers {
+    padding: 0px 105px 0px;
+  }
+
+  .mymap {
+    height: 470px;
+  }
+
+  .quality-seal-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .quality-seal-content {
+    padding: 0px 45px 0px 30px;
+  }
+
+  .quality-seal-image img {
+    width: 127px;
+    margin-top: 7px;
+  }
+
+  .envets .register {
+    font-size: 12px;
+    line-height: 22px;
+    padding: 4px 16px;
+  }
+
+  .spring-event::after {
+    top: 36.8%;
+    height: 196px;
+    width: 1px;
+  }
+
+  footer {
+    padding: 0px 28px 49px 43px;
+  }
+
+  .footer-image img {
+    width: 155px;
+  }
+
+  .footer-contact ul li a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .footer-contact ul li {
+    margin-bottom: 4px;
+  }
+
+
+  .footer-social {
+    margin: 11px 0px 11px;
+  }
+
+
+}
+
+/* Medium devices (landscape tablets, 834px and up) */
+
+@media only screen and (max-width: 834px) {
+  .banner {
+    padding: 135px 0px 92px;
+  }
+
+  .banner-inner h2 {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 13px;
+  }
+
+  .banner-inner {
+    max-width: 397px;
+  }
+
+  .banner-inner h1 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .about {
+    padding: 53px 28px 65px;
+  }
+
+  .about-column {
+    display: block;
+    width: 100%;
+  }
+
+  .about-top-image {
+    left: 49px;
+    top: -91px;
+    max-width: 148px;
+  }
+
+  .about-image {
+    margin-bottom: 93px;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 150px;
+    margin-left: 0px;
+  }
+
+  .about-content {
+    padding: 0px 30px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  .about-content a {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 8px 19px;
+  }
+
+  .about-images img {
+    width: 60%;
+    margin-bottom: 13px;
+  }
+
+  .about-bottom-images p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .cunter {
+    padding: 48px 28px 0px;
+  }
+
+  .counter-content h2 {
+    font-size: 73px;
+    line-height: 84px;
+  }
+
+  .counter-content p {
+    max-width: 102px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .memebers {
+    padding: 0px 65px 0px;
+  }
+
+  .memebership {
+    padding: 100px 70px 0px;
+    background-size: 212px 285px;
+    background-position: right 0em bottom 112px px;
+  }
+
+
+  .memebership-image {
+    margin: 88px 0px 0px 38px;
+  }
+
+  .memebership-content {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .memebership-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 23px;
+  }
+
+  .memebership-content a {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 26px;
+  }
+
+  .memebership-image img {
+    width: 135px;
+  }
+
+
+  .memebers-content h2 {
+    font-size: 29px;
+    line-height: 38px;
+  }
+
+  .memebers {
+    padding: 0px 99px 0px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 29px;
+    line-height: 38px;
+    margin-bottom: 45px;
+  }
+
+  .quality-seal-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 17px;
+  }
+
+  .quality-seal-content a {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 6px 36px 6px 36px;
+  }
+
+  .quality-seal-image img {
+    width: 132px;
+    margin-top: 0px;
+  }
+
+  .envets {
+    padding: 87px 80px 44px;
+  }
+
+  .envets-head h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 18px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 12px;
+  }
+
+  .envets-meeting ul li a {
+    font-size: 14px;
+  }
+
+  .envets-meeting ul li {
+    max-width: 182px;
+    margin-bottom: 9px;
+  }
+
+
+
+  .spring-event::after {
+    top: 37.8%;
+    height: 196px;
+    width: 1px;
+  }
+
+  footer {
+    padding: 0px 25px 49px 26px;
+  }
+
+  .footer-image img {
+    width: 151px;
+  }
+
+  .envets-meeting ul li a {
+    font-size: 12px;
+  }
+
+  .footer-contact {
+    padding-top: 8px;
+  }
+
+  .list {
+    margin-top: 14px;
+  }
+
+  .envets .register {
+    font-size: 11px;
+    line-height: 18px;
+    padding: 6px 18px;
+  }
+
+
+
+  .footer-border::before {
+    width: 2px;
+    height: 181px;
+    left: 25%;
+  }
+}
+
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (max-width: 800px) {
+  .header-logo {
+    max-width: 139px;
+    padding: 2px 8px 2px 8px;
+  }
+
+  .banner {
+    padding: 140px 0px 94px;
+  }
+
+  .about-image {
+    margin-bottom: 82px;
+
+  }
+
+  .about-top-image {
+    left: 43px;
+    top: -91px;
+    max-width: 146px;
+  }
+
+  .about {
+    padding: 49px 28px 63px;
+  }
+
+  .about-content {
+    padding-right: 20px;
+  }
+
+  .cunter {
+    padding: 44px 28px 0px;
+  }
+
+  .counter-content h2 {
+    font-size: 71px;
+    line-height: 81px;
+  }
+
+  .memebership {
+    padding: 100px 67px 0px;
+    background-size: 186px 243px;
+    background-position: right 0em bottom 172px;
+  }
+
+  .memebership-content {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .memebers {
+    padding: 0px 79px 0px;
+  }
+
+  .memebership-content {
+    padding: 0px 0px 0px 8px;
+  }
+
+  .memebers-content {
+    padding: 69px 0px 37px;
+  }
+
+  .quality-seal {
+    padding: 60px 45px 0px;
+  }
+
+  .quality-seal-content {
+    padding: 0px 36px 0px 30px;
+  }
+
+  .envets {
+    padding: 76px 77px 42px;
+  }
+
+  .spring-event::after {
+    top: 36.8%;
+    height: 189px;
+    width: 1px;
+    left: 40%;
+  }
+
+  .envets .register {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 7px 17px;
+  }
+
+  footer {
+    padding: 0px 27px 34px 36px;
+  }
+
+  .list li a {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .about-column {
+    text-align: center;
+  }
+
+  .memebership {
+    padding: 68px 70px 0px;
+    background-image: none
+      /* background-size: 198px 259px;
+    background-position: right 0em bottom 59px; */
+  }
+
+  .memebership-content {
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .memebership-image {
+    margin: 99px 0px 0px 0px;
+    display: none;
+  }
+
+  .memebership-image {
+    margin: 99px 0px 0px 0px;
+  }
+
+  .membership-contents {
+    width: 100%;
+  }
+
+  .memebership-image img {
+    width: 142px;
+  }
+
+  .memebers {
+    padding: 0px 75px 0px;
+  }
+
+  .quality-seal-content {
+    padding: 0px 36px 0px 23px;
+    text-align: center;
+  }
+
+  footer {
+    padding: 0px 22px 34px 20px;
+  }
+
+  .footer-image img {
+    width: 146px;
+  }
+}
+
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (max-width: 767px) {
+
+  .quality-seal-content {
+    padding: 0px 0px 0px 0px;
+
+  }
+
+  .envets {
+    padding: 76px 59px 42px;
+    text-align: center;
+  }
+
+  .spring-event::after {
+    top: 58.8%;
+    height: 1px;
+    width: 243px;
+    left: 34%;
+  }
+
+  .envets-meeting ul {
+    margin-bottom: 0px;
+    text-align: -webkit-center;
+  }
+
+  .envets-meeting ul li {
+    max-width: 181px;
+    margin-bottom: 11px;
+  }
+
+  .registered {
+    margin-bottom: 40px;
+  }
+
+  footer {
+    padding: 0px 60px 39px 60px;
+    text-align: center;
+  }
+
+  .footer-image {
+    padding: 25px 0px 18px;
+  }
+
+  .footer-contact {
+    padding-top: 0px;
+    text-align: -webkit-center;
+  }
+
+  .footer-border::before {
+    width: 222px;
+    height: 2px;
+    left: 36%;
+  }
+
+  .footer-menu {
+    padding-top: 8px;
+    max-width: 409px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+
+  .footer-social ul {
+    justify-content: center;
+  }
+
+  .copy-write p {
+    text-align: center;
+  }
+}
+
+/* Medium devices (landscape tablets, 640px and up) */
+
+@media only screen and (max-width: 640px) {
+  .header-logo {
+    max-width: 136px;
+    padding: 2px 6px 2px 6px;
+  }
+
+  .about-top-image {
+    left: 30px;
+    top: -86px;
+    max-width: 132px;
+  }
+
+  .about-image img {
+    width: 140px;
+
+  }
+
+  .about-images img {
+    width: 50%;
+    margin-bottom: 9px;
+  }
+
+  .about {
+    padding: 40px 10px 49px;
+  }
+
+  .about-image {
+    margin-bottom: 72px;
+  }
+
+  .about-content {
+    margin-bottom: 83px;
+  }
+
+  .counter-content h2 {
+    font-size: 56px;
+    line-height: 70px;
+  }
+
+  .cunter {
+    padding: 39px 10px 0px;
+  }
+
+  content {
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+
+  }
+
+  .memebership {
+    padding: 56px 35px 0px;
+  }
+
+  .memebership-image {
+    margin: 95px 0px 0px 0px;
+  }
+
+  .memebers {
+    padding: 0px 32px 0px;
+  }
+
+  .quality-seal {
+    padding: 60px 10px 0px;
+  }
+
+  .spring-event::after {
+    top: 58.8%;
+    height: 1px;
+    width: 243px;
+    left: 31%;
+  }
+
+  .envets .register {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 6px 15px;
+  }
+
+  .footer-border::before {
+    width: 227px;
+    height: 2px;
+    left: 33%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 600px) {
+
+  .banner {
+    padding: 134px 0px 92px;
+  }
+
+  .about-top-image {
+    left: 27px;
+    top: -77px;
+    max-width: 117px;
+  }
+
+  .about-image img {
+    width: 126px;
+  }
+
+  .memebers-content h2 {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  .quality-seal {
+    padding: 45px 7px 0px;
+  }
+
+  .spring-event::after {
+    top: 58.8%;
+    height: 1px;
+    width: 222px;
+    left: 31%;
+  }
+
+  footer {
+    padding: 0px 60px 16px 60px;
+
+  }
+
+  .footer-border::before {
+    width: 232px;
+    height: 2px;
+    left: 31%;
+  }
+
+  .footer-menu {
+    max-width: 520px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 576px and up) */
+
+@media only screen and (max-width: 576px) {
+  .counter-content h2 {
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  .counter-content p {
+    max-width: 102px;
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+  .memebership {
+    padding: 38px 29px 0px;
+    background-size: 132px 180px;
+    background-position: right 0em bottom 111px;
+  }
+
+  .mymap {
+    height: 420px;
+  }
+
+  .envets {
+    padding: 76px 59px 42px;
+    text-align: center;
+    background-size: 155px 528px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 540px and up) */
+
+@media only screen and (max-width: 540px) {
+  .header-logo {
+    max-width: 136px;
+    padding: 2px 5px 2px 5px;
+  }
+
+  .banner-inner h1 {
+    font-size: 23px;
+    line-height: 31px;
+  }
+
+  .about-top-image {
+    left: 27px;
+    top: -70px;
+    max-width: 111px;
+  }
+
+  .about-image img {
+    width: 120px;
+  }
+
+  .about {
+    padding: 34px 10px 49px;
+  }
+
+  .about-content p {
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+
+  .about-images img {
+    width: 47%;
+    margin-bottom: 7px;
+  }
+
+  .cunter {
+    padding: 34px 11px 0px;
+  }
+
+  .counter-columns {
+    width: 25%;
+  }
+
+  .counter-content h2 {
+    font-size: 44px;
+    line-height: 55px;
+  }
+
+  .counter-content p {
+    max-width: 102px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .about {
+    padding: 34px 0px 49px;
+  }
+
+  .about-image {
+    margin-bottom: 63px;
+  }
+
+  .about-content {
+    padding-right: 14px;
+    padding: 0px 13px;
+  }
+
+  .cunter {
+    padding: 34px 1px 0px;
+  }
+
+  .memebership {
+    padding: 38px 10px 0px;
+  }
+
+  .memebers {
+    padding: 0px 22px 0px;
+  }
+
+  .memebers-content h2 {
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 26px;
+    line-height: 31px;
+  }
+
+  .envets {
+    background-size: 155px 528px;
+  }
+
+  .spring-event::after {
+    top: 58.8%;
+    height: 1px;
+    width: 174px;
+    left: 33%;
+  }
+
+  .envets .register {
+    font-size: 11px;
+    line-height: 17px;
+    padding: 5px 15px;
+  }
+
+  footer {
+    padding: 0px 22px 16px 22px;
+  }
+
+  .footer-border::before {
+    width: 211px;
+    height: 2px;
+    left: 31%;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 480px and up) */
+
+@media only screen and (max-width: 480px) {
+  .banner-inner h1 {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .about-top-image {
+    left: 23px;
+    top: -63px;
+    max-width: 104px;
+  }
+
+  .about-image {
+    margin-bottom: 60px;
+  }
+
+  .about-bottom-images {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-bottom-image {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .about-images img {
+    width: 50%;
+    margin-bottom: 7px;
+  }
+
+  .about-image img {
+    width: 115px;
+  }
+
+  .counter-content h2 {
+    font-size: 42px;
+    line-height: 53px;
+  }
+
+  .memebership {
+    background-size: 130px 175px;
+    background-position: right 0em bottom 147px;
+  }
+
+  .memebership-image {
+    margin: 76px 0px 0px 0px;
+  }
+
+
+  .memebership-image img {
+    width: 127px;
+  }
+
+  .counter-columns {
+    width: 50%;
+  }
+
+  .envets {
+    background-size: 130px 492px;
+  }
+
+  .envets-head h2 {
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 18px;
+  }
+
+  .spring-event::after {
+    top: 58.8%;
+    height: 1px;
+    width: 160px;
+    left: 33%;
+  }
+
+  footer {
+    padding: 0px 14px 16px 14px;
+  }
+
+  .footer-border::before {
+    width: 188px;
+    height: 2px;
+    left: 31%;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 428px and up) */
+@media only screen and (max-width: 428px) {
+  .header-logo {
+    max-width: 135px;
+    padding: 2px 4px 2px 5px;
+  }
+
+  .banner {
+    padding: 130px 0px 56px;
+  }
+
+  .banner-inner h1 {
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .about-content {
+    margin-bottom: 57px;
+  }
+
+  .about-top-image {
+    left: 23px;
+    top: -62px;
+    max-width: 98px;
+  }
+
+  .about {
+    padding: 32px 0px 40px;
+  }
+
+  .about-image img {
+    width: 108px;
+  }
+
+  .about-bottom-images p {
+    font-size: 13px;
+    line-height: 19px;
+  }
+
+  .memebership {
+    background-size: 129px 173px;
+    background-position: right 0em bottom 177px;
+  }
+
+  .memebership-image img {
+    width: 119px;
+  }
+
+  .memebers-content h2 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+
+  .mymap {
+    height: 390px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 25px;
+    line-height: 31px;
+  }
+
+  .spring-event::after {
+    top: 58.8%;
+    height: 1px;
+    width: 151px;
+    left: 32%;
+  }
+
+  .envets {
+    background-size: 107px 448px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 11px;
+  }
+
+  footer {
+    padding: 0px 6px 16px 6px;
+  }
+
+  .footer-menu {
+    max-width: 374px;
+  }
+
+  .footer-border::before {
+    width: 178px;
+    height: 2px;
+    left: 30%;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 425px and up) */
+@media only screen and (max-width: 425px) {
+  .footer-menu {
+    max-width: 347px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 414px and up) */
+
+@media only screen and (max-width: 414px) {
+  .header-logo {
+    max-width: 130px;
+    padding: 2px 3px 2px 3px;
+  }
+
+  .banner-inner h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .about {
+    padding: 29px 0px 38px;
+  }
+
+  .about-top-image {
+    left: 22px;
+    top: -58px;
+    max-width: 90px;
+  }
+
+  .about-image {
+    margin-bottom: 54px;
+  }
+
+  .about-image img {
+    width: 95px;
+  }
+
+  .about-content {
+
+    padding: 0px 8px;
+  }
+
+  .cunter {
+    padding: 27px 0px 0px;
+  }
+
+  .counter-content h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .memebership {
+    padding: 29px 8px 0px;
+  }
+
+  .memebership-image img {
+    width: 116px;
+  }
+
+  .memebers-content h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .quality-seal {
+    padding: 34px 5px 0px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  .envets-head h2 {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 17px;
+  }
+
+  .spring-event::after {
+    top: 58.8%;
+    height: 1px;
+    width: 146px;
+    left: 32%;
+  }
+
+}
+
+/*  small Mobile devices( small Mobile devices, 412px and up) */
+
+@media only screen and (max-width: 412px) {
+  /*  */
+}
+
+/*  small Mobile devices( small Mobile devices, 400px and up) */
+
+@media only screen and (max-width: 400px) {
+
+  .banner {
+    padding: 123px 0px 50px;
+  }
+
+  .banner-inner h1 {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .about {
+    padding: 27px 0px 23px;
+  }
+
+  .about-top-image {
+    left: 19px;
+    top: -54px;
+    max-width: 86px;
+  }
+
+  .about-image {
+    margin-bottom: 43px;
+  }
+
+  .about-image img {
+    width: 91px;
+  }
+
+  .about-content {
+    padding: 0px 0px;
+  }
+
+  .about-content a {
+    font-size: 11px;
+    line-height: 18px;
+    padding: 8px 17px;
+  }
+
+  .about-bottom-image {
+    width: 100%;
+    margin-bottom: 23px;
+  }
+
+  .about-images img {
+    margin-bottom: 5px;
+  }
+
+  .about-bottom-images p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .counter-content h2 {
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .memebership {
+    padding: 10px 6px 0px;
+  }
+
+  .memebership-image img {
+    width: 113px;
+  }
+
+  .memebership-content a {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 25px;
+  }
+
+  .memebers {
+    padding: 0px 14px 0px;
+  }
+
+  .mymap {
+    height: 370px;
+  }
+
+  .quality-seal-content a {
+    font-size: 14px;
+    line-height: 23px;
+    padding: 6px 34px 6px 34px;
+  }
+
+  .counter-columns {
+    width: 100%;
+  }
+
+  .envets {
+    padding: 63px 51px 38px;
+    text-align: center;
+    background-size: 94px 429px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 393px and up) */
+
+@media only screen and (max-width: 393px) {
+  .header-logo {
+    max-width: 130px;
+    padding: 1px 2px 1px 2px;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.4em;
+    height: 1.4em;
+  }
+
+  header .navbar-nav li a {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .banner {
+    padding: 100px 0px 42px;
+  }
+
+  .banner-inner h2 {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+
+  .banner-inner h1 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .about-top-image {
+    left: 18px;
+    top: -51px;
+    max-width: 81px;
+  }
+
+  .about-image img {
+    width: 86px;
+  }
+
+  .memebers {
+    padding: 0px 13px 0px;
+  }
+
+  .memebers-content h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .quality-seal-image img {
+    width: 124px;
+    margin-top: 0px;
+  }
+
+  .envets-head h2 {
+    font-size: 25px;
+    line-height: 31px;
+    margin-bottom: 16px;
+  }
+
+  .spring-event::after {
+    top: 58.8%;
+    height: 1px;
+    width: 148px;
+    left: 31%;
+  }
+
+  .envets-meeting ul {
+
+    min-height: 105px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 390px and up) */
+
+@media only screen and (max-width: 390px) {
+  /*  */
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 375px and up) */
+
+@media only screen and (max-width: 375px) {
+  .banner-inner h1 {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .about-top-image {
+    left: 13px;
+    top: -50px;
+    max-width: 80px;
+  }
+
+  .about-image img {
+    width: 83px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 25px;
+  }
+
+  .about-content a {
+    font-size: 10px;
+    line-height: 17px;
+    padding: 7px 16px;
+  }
+
+  .counter-content p {
+    max-width: 102px;
+    line-height: 15px;
+  }
+
+  .memebership-right-image {
+    max-width: 114px;
+    top: 395px;
+  }
+
+  .memebership-content a {
+    font-size: 13px;
+    line-height: 19px;
+    padding: 8px 24px;
+  }
+
+  .memebers {
+    padding: 0px 6px 0px;
+  }
+
+  .memebers-content {
+    padding: 54px 0px 22px;
+  }
+
+  .memebers-content h2 {
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .mymap {
+    height: 330px;
+  }
+
+  .quality-seal {
+    padding: 29px 5px 0px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .envets {
+    background-size: 83px 408px;
+  }
+
+  .envets-head h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 13px;
+    line-height: 19px;
+    margin-bottom: 10px;
+  }
+
+  .envets .register {
+    font-size: 10px;
+    line-height: 17px;
+    padding: 4px 14px;
+  }
+
+
+
+  .copy-write p {
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .footer-border::before {
+    width: 177px;
+    height: 2px;
+    left: 26%;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 360px and up) */
+
+@media only screen and (max-width: 360px) {
+  .header-logo {
+    max-width: 122px;
+    padding: 1px 2px 1px 2px;
+  }
+
+  .about-images img {
+    width: 50%;
+    margin-bottom: 0px;
+    height: 86px;
+  }
+
+  .counter-content h2 {
+    font-size: 44px;
+    line-height: 47px;
+  }
+
+  .memebership-image img {
+    width: 105px;
+  }
+
+  .memebership-right-image {
+    max-width: 107px;
+    top: 396px;
+  }
+
+  .spring-event::after {
+    top: 58.8%;
+    height: 1px;
+    width: 148px;
+    left: 29%;
+  }
+
+  .footer-border::before {
+    width: 177px;
+    height: 2px;
+    left: 25%;
+  }
+
+}
+
+/*  extra small Mobile devices( extra small Mobile devices, 320px and up) */
+
+@media only screen and (max-width: 320px) {
+  .header-logo {
+    max-width: 120px;
+    padding: 0px 1px 0px 2px;
+  }
+
+  header .navbar-nav li a {
+    font-size: 14px;
+    line-height: 29px;
+  }
+
+  .banner-inner h1 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .about-top-image {
+    left: 12px;
+    top: -47px;
+    max-width: 76px;
+  }
+
+  .about-image img {
+    width: 79px;
+  }
+
+  .about-image {
+    margin-bottom: 39px;
+  }
+
+  .memebership-image img {
+    width: 102px;
+  }
+
+  .memebership-image {
+    margin: 68px 0px 0px 0px;
+  }
+
+  .memebership-right-image {
+    max-width: 95px;
+    top: 466px;
+  }
+
+  .memebers-content h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .mymap {
+    height: 290px;
+  }
+
+  .quality-seal-head h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .quality-seal-image img {
+    width: 121px;
+
+  }
+
+  .envets {
+    background-size: 61px 364px;
+  }
+
+  .envets-head h2 {
+    font-size: 23px;
+    line-height: 29px;
+    margin-bottom: 14px;
+  }
+
+  .envets-meeting h2 {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 7px;
+  }
+
+  .envets .register {
+    font-size: 10px;
+    line-height: 16px;
+    padding: 4px 12px;
+  }
+
+  footer {
+    padding: 0px 0px 12px 0px;
+  }
+
+  .footer-menu {
+    max-width: 233px;
+  }
+
+}
